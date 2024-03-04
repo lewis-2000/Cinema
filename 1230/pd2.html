@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/storage.js"></script>
+
+    <title>CINEMA - MADAME WEB</title>
+</head>
+<body>
+    <nav class="pd-nav">
+        <h1 class="logo">Cine<span class="red">ma</span> 🎥</h1>
+        <ul>
+            <li ><a href="../index.html">HOME</a></li>
+            <li><a href="./upcoming.html">UPCOMING MOVIES</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li class="white nav-link-active">MADAME WEB</li>
+        </ul>
+
+        <h3 class="mobile-menu-toggle">Menu</h3>
+    </nav>
+
+    <section class="pd__hero">
+        <div class="pd-poster">
+            <div class="pd-poster-image">
+                <img src="../assets/LEJAdhzP.jpg" alt="MADAME WEB Poster">
+            </div>
+        </div>
+        <div class="pd-preview">
+            <div class="pd-preview-image">
+                <img src="../assets/hqdefault (4).jpg" alt="MADAME WEB banner">
+            </div>
+        </div>
+    </section>
+
+    <section class="about__movie">
+        <div class="now__showing-header">
+            <h1> <span class="yellow">ABOUT</span> MOVIE </h1>
+        </div> <br>
+
+        <p class="about__movie-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor perspiciatis optio, fugiat aliquam animi et aliquid aut cupiditate quo? Neque similique perspiciatis voluptate illo ex esse dignissimos suscipit libero sit quo asperiores vero ducimus delectus ipsam eius, sapiente reprehenderit! Aliquam, commodi labore! Beatae perferendis voluptate cumque unde est doloremque voluptas, cupiditate harum.</p>
+
+    </section>
+
+    <section class="ticket__booking">
+        <div class="ticket__booking-location">
+            <div class="ticket__booking-location-header">
+                <h1 class="yellow">TICKET BOOKING</h1>
+            </div>
+
+            <div class="select-cinema">
+                <h1 class="white rcondensed fmedium">SELECT CINEMA</h1> <br>
+
+                <p class="white rnormal fsmall">Start by selecting the cinema at which you would like to watch the movie.</p>
+
+                <div class="select-cinema-btn-group">
+                    <button id="b1" class="btn-group">TWO RIVERS</button>
+                    <button id="b2" class="btn-group">JUNCTION</button>
+                    <button id="b3" class="btn-group">GARDEN CITY</button>
+                    <button id="b4" class="btn-group">SARIT</button>
+                </div>
+
+                <button class="continue" onclick="openNav()">CONTINUE</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>©️CopyRight Cinema 2024</p>
+    </footer>
+    
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-container">
+            <div class="select-cinema">
+                <h1 class="yellow rcondensed fmedium">SELECT CINEMA</h1> <br>
+    
+                <p class="white rnormal fsmall">Start by selecting the cinema at which you would like to watch the movie.</p>
+
+                <div class="select-cinema-btn-group">
+                    <button id="b1" class="btn-group">TWO RIVERS</button>
+                    <button id="b2" class="btn-group">JUNCTION</button>
+                    <button id="b3" class="btn-group">GARDEN CITY</button>
+                    <button id="b4" class="btn-group">SARIT</button>
+                </div>
+
+                <div class="ticket-price-container">
+                    <div class="ticket-price" id="300">
+                        <div class="ticket-price-header">
+                            <img src="../assets/ticket.jpg" alt="ticket">
+                        </div>
+                        <div class="ticket-price-footer white rcondensed fmedium">
+                           STANDARD - <span class="yellow">KSH 300</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ticket-price" id="500">
+                        <div class="ticket-price-header">
+                            <img src="../assets/ticket.jpg" alt="ticket">
+                        </div>
+                        <div class="ticket-price-footer white rcondensed fmedium">
+                            UPGRADED - <span class="yellow">KSH 500</span>
+                         </div>
+
+                    </div>
+
+                    <div class="ticket-price" id="800">
+                        <div class="ticket-price-header">
+                            <img src="../assets/ticket.jpg" alt="ticket">
+                        </div>
+
+                        <div class="ticket-price-footer white rcondensed fmedium">
+                            PREMIUM - <span class="yellow">KSH 800</span>
+                         </div>
+
+                    </div>
+
+                </div>
+
+                <div class="seat-selector">
+                    <ul class="showcase">
+                        <li>
+                            <div class="seat"></div>
+                            <small>Available</small>
+                        </li>
+                        <li>
+                            <div class="seat selected"></div>
+                            <small>Selected</small>
+                        </li>
+                        <li>
+                            <div class="seat occupied"></div>
+                            <small>Occupied</small>
+                        </li>
+                    </ul>
+
+                    <div class="container">
+                        <div class="movie-screen">
+                            <img src='../assets/screen-thumb.png' alt='screen' />
+                        </div>
+                
+                        <div class="row-container">
+                            <h5 class='subtitle yellow rcondensed'>PREMIUM - KSH 800</h5>
+
+                            <div class="row">
+                                <div class="seat" id="a1"></div>
+                                <div class="seat" id="a2"></div>
+                                <div class="seat" id="a3"></div>
+                                <div class="seat" id="a4"></div>
+                                <div class="seat" id="a5"></div>
+                                <div class="seat" id="a6"></div>
+                                <div class="seat" id="a7"></div>
+                                <div class="seat" id="a8"></div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="a9"></div>
+                                <div class="seat" id="a10"></div>
+                                <div class="seat" id="a11"></div>
+                                <div class="seat occupied" id="a12"></div>
+                                <div class="seat occupied" id="a13"></div>
+                                <div class="seat" id="a14"></div>
+                                <div class="seat" id="a15"></div>
+                                <div class="seat" id="a16"></div>
+                            </div>
+
+                            <h5 class='subtitle yellow rcondensed'>UPGRADED - KSH 500</h5>
+                            <div class="row">
+                                <div class="seat" id="b1"></div>
+                                <div class="seat" id="b2"></div>
+                                <div class="seat" id="b3"></div>
+                                <div class="seat" id="b4"></div>
+                                <div class="seat" id="b5"></div>
+                                <div class="seat" id="b6"></div>
+                                <div class="seat" id="b7"></div>
+                                <div class="seat" id="b8"></div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="b9"></div>
+                                <div class="seat" id="b10"></div>
+                                <div class="seat" id="b11"></div>
+                                <div class="seat" id="b12"></div>
+                                <div class="seat occupied" id="b13"></div>
+                                <div class="seat occupied" id="b14"></div>
+                                <div class="seat occupied" id="b15"></div>
+                                <div class="seat" id="b16"></div>
+                            </div>
+                            <h5 class='subtitle yellow rcondensed'>STANDARD - KSH 300</h5>
+                            <div class="row">
+                                <div class="seat" id="c1"></div>
+                                <div class="seat" id="c2"></div>
+                                <div class="seat" id="c3"></div>
+                                <div class="seat" id="c4"></div>
+                                <div class="seat" id="c5"></div>
+                                <div class="seat" id="c6"></div>
+                                <div class="seat" id="c7"></div>
+                                <div class="seat" id="c8"></div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="c9"></div>
+                                <div class="seat" id="c10"></div>
+                                <div class="seat" id="c11"></div>
+                                <div class="seat" id="c12"></div>
+                                <div class="seat" id="c13"></div>
+                                <div class="seat" id="c14"></div>
+                                <div class="seat" id="c15"></div>
+                                <div class="seat" id="c16"></div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="c17"></div>
+                                <div class="seat" id="c18"></div>
+                                <div class="seat" id="c19"></div>
+                                <div class="seat" id="c20"></div>
+                                <div class="seat" id="c21"></div>
+                                <div class="seat" id="c22"></div>
+                                <div class="seat" id="c23"></div>
+                                <div class="seat" id="c24"></div>
+                            </div>
+                
+
+                        </div>
+                
+                    </div>
+                
+                </div>
+               
+    
+            </div>
+    
+            <div class="payment">
+                <div class="payment-container">
+                    <form>
+                        <h3 class="rcondensed green">Pay With</h3> <br>
+                        <div class="mpesa__icon rcondensed"></div> <br>
+
+                        <label class="rnormal" for="firstName">first Name</label> <br>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name">
+
+                        <label class="rnormal" for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name">
+
+                        <label class="rnormal" for="email">Your email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+
+                        <div class="details-warning">
+                            <h3 class="red rnormal fsmall">Please type in your email correctly. Confirm Afterwards. No refunds for any error not on our end. Thank you for your diligence.</h3>
+                        </div>
+
+                        <label class="rnormal" for="pnumber">Phone Number</label>
+                        <input type="tel" name="pnumber" id="pnumber" placeholder="Enter Your Phone Number">
+
+                        <input class="rnormal white" type="submit" value="PAY">
+
+
+                    </form>
+
+                    <div class="payment__summary">
+                        <div class="payment__summary-header">
+                            <img src="../assets/LEJAdhzP.jpg" alt="MADAME WEB Poster">
+                            <div class="payment__summary-content">
+                                <h1 class="yellow rcondensed fmedium">SUMMARY</h1> <br>
+
+                                <h3 class="white rcondensed fsmall bbottom">THE BEEKEPER</h3> <br> <br>
+                                <h3 class="white rcondensed fsmall">LOCATION AND TIME:</h3> <br>
+                                <h4 class="white rnormal fsmall ">Cinema <span id="selected-cinema"></span> at 10:00 P.M</h4> <br> <br>
+
+                                <h3 class="white rcondensed fsmall">Seats:</h3> <br>
+                                <h4 class="white rnormal fsmall">Seat <span id="PaymentSeat"></span></h4> <br> <br>
+
+                                <h3 class="white rcondensed fsmall">TICKET PRICE:</h3> <br>
+                                <h4 class="white rnormal fsmall ">KSH <span id="ticketPrice"></span></h4> <br> <br>
+
+                                <h3 class="white rcondensed fsmall">AMOUNT PAYABLE:</h3> <br>
+                                <h4 class="white rnormal fsmall ">KSH <span id="payablePrice"></span></h4> <br> <br>
+
+
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="payment-sumary-body">
+                            <form>
+                                <input type="text" name="coupon" id="coupon" placeholder="Discount Code">
+                                <input type="submit" value="Apply">
+                            </form>
+
+                        </div> <br>
+
+                        <div class="total-amount" id="total-amount">
+                            <h3 class="white rcondensed fsmall">TOTAL AMOUNT: <span id="total-price"></span></h3> 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Payment Navigation Bar -->
+    <script>
+        /* Open the sidenav */
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        /* Close/hide the sidenav */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+</body>
+</html>
