@@ -220,29 +220,47 @@ nav ul li, nav ul li a{
   }
 
   .first{
-    background: url('../assets/a.jpg');
+    background: url('../assets/1174529.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .second{
-    background:url('../assets/b.jpg');
+    background:url('../assets/1351191.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .third{
-    background: url('../assets/c.jpg');
+    background: url('../assets/934762.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .fourth{
-    background: url('../assets/d.jpg');
+    background: url('../assets/1342671.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
   }
 
   .fifth{
-    background: url('../assets/c.jpg');
+    background: url('../assets/698257.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
   }
 
   .first{
-    background: url('../assets/a.jpg');
+    background: url('../assets/1174529.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
   }
 
@@ -356,14 +374,16 @@ nav ul li, nav ul li a{
   .movie-preview{
     height: 25rem;
     width: 100%;
+    overflow: hidden;
     background-color: var(--movie-grey);
 
 
   }
 
-  .movie-preview video{
+  .movie-preview img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   .movie-preview-details{
@@ -1065,7 +1085,14 @@ p.text span {
 
     .movie-preview{
         height: 15rem;
+        overflow: hidden;
         border-radius: 0;
+    }
+
+    .movie-preview img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .movie-preview-details{
